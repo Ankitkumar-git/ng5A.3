@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="light dark" />
+    <meta
+      name="description"
+      content="Your place to get started with semantic web development"
+    />
+    <title>neoG starter template</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="container">
+      <hgroup>
+        <h1>neoG starter</h1>
+        <p>A minimal template to learn semantic web dev</p>
+      </hgroup>
+    </header>
+    <main class="container">
+      <p>Your app will go here</p>
+    </main>
+    <footer class="container neog-footer">
+      <small>
+        go from zero to hero at full stack development with
+        <a href="https://neog.camp">neog.camp</a>
+      </small>
+    </footer>
+    <script>
+      const phone = {
+        brand: "Apple",
+        model: "iphone 14 pro",
+        color: "Space Black",
+        storage: "256GB",
+        is5G: true,
+      };
+      console.log("Brand:", phone.brand);
+      console.log("model:", phone.model);
+      //another way of accessing the object
+      console.log("color:", phone["color"]);
+      console.log("storage:", phone["storage"]);
+
+      //adding new property to the existing object
+      phone.screenSize = "6.1 inches";
+      console.log(phone);
+    </script>
+  </body>
+</html>
